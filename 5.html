@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <script>
+        function price(){
+            og= parseInt(prompt("Enter the original price of the item "));
+            mp= parseInt(prompt("Enter the percentage of the marked-up price "));
+            str= parseInt(prompt("Enter the sales tax rate "));
+            sellp= og+((mp/100)*og);
+            tp= sellp*(str/100);
+            final= parseInt(sellp+tp);
+            alert("The original price of the item: " + og + "\n" + "The percentage of the mark-up: " + mp + "%" + "\n" +  "The store's selling price of the item: " + sellp + "\n" + "The sales tax rate: " + str + "%" + "\n" + "The sales tax: " + tp + "\n" + "The final price of the item: " + final);
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="price()">Click Me</button>
+</body>
+</html>

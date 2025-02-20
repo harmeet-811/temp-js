@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <script>
+        //Question 1- Add & avg of 5 decimal numbers
+        function show(){
+            n1= parseFloat(prompt("Enter 1st decimal number:"));
+            n2= parseFloat(prompt("Enter 2nd decimal number:"));
+            n3= parseFloat(prompt("Enter 3rd decimal number:"));
+            n4= parseFloat(prompt("Enter 4th decimal number:"));
+            n5= parseFloat(prompt("Enter 5th decimal number:"));
+            alert("5 decimal numbers are:"+"\n"+n1+"\n"+n2+"\n"+n3+"\n"+n4+"\n"+n5);
+            sum= (n1+n2+n3+n4+n5);
+            avg= sum/5 ;
+            alert("Sum of 5 decimal numbers: \n"+ sum + "\n" + "Average :\n" + avg);
+        }
+
+        //Question 2- Total miles the automobile can drive
+        function total(){
+            fuel=parseFloat(prompt("Enter the capacity of an automobile fuel tank (in gallons) "));
+            miles=parseFloat(prompt("Enter the miles per gallons the automobile can be driven "));
+            num= (fuel*miles);
+            alert("The number of miles the automobile can be driven without refueling is \n" + num.toFixed(2) + "miles.");
+        }
+
+        //Questin 3-  Time in seconds to hours, minutes, seconds
+        function time(){
+            tym= parseInt(prompt("Enter the time (in seconds)"));
+            hr= parseInt(tym/3600);
+            tym= (tym%3600);
+            min= parseInt(tym/60);
+            sec= (tym%60);
+            alert(hr+":"+min+":"+sec);
+        }
+
+        //Question 4- Time in hours, minutes, and seconds to total seconds
+        function seconds(){
+            hr=parseInt(prompt("Enter the hours:"));
+            min=parseInt(prompt("Enter the minutes:"));
+            sec=parseInt(prompt("Enter the seconds:"));
+            tym= (hr*3600)+(min*60)+sec;
+            alert("The time in seconds is: " + tym + " seconds");
+        }
+
+        //Question 5- Price calculations with markup % and sales tax
+        function price(){
+            og= parseInt(prompt("Enter the original price of the item "));
+            mp= parseInt(prompt("Enter the percentage of the marked-up price "));
+            str= parseInt(prompt("Enter the sales tax rate "));
+            sellp= og+((mp/100)*og);
+            tp= sellp*(str/100);
+            final= parseInt(sellp+tp);
+            alert("The original price of the item: " + og + "\n" + "The percentage of the mark-up: " + mp + "%" + "\n" +  "The store's selling price of the item: " + sellp + "\n" + "The sales tax rate: " + str + "%" + "\n" + "The sales tax: " + tp + "\n" + "The final price of the item: " + final);
+        }
+
+        //Question 6- Milk cartons needed, cost of production, profit
+        function liters(){
+            milk=parseFloat(prompt("Enter the total amount of milk produced"));
+            car= Math.round(milk/3.78);
+            pcost= Math.round(milk*0.38);
+            profit= Math.round(car*0.27);
+            alert("The number of milk cartons needed: "+car+"\n"+"The cost of producing milk: $"+pcost+"\n"+"The profit of producing milk: $"+profit)
+        }
+        
+        //Question 7-Calculate income, taxes, and savings bonds
+        function job(){
+            hr= parseInt(prompt("Enter the number of hours worked each week"));
+            prate= parseFloat(prompt("Enter the pay rate for an hour","15.50"));
+            binc= (hr*prate*5);
+            tax= (binc*0.14);
+            net=  (binc-tax);
+            clothes= (net*0.1);
+            sup= (net*0.01);
+            remain= (net-clothes-sup);
+            save= (remain*0.25);
+            parent= (save*0.50);
+            alert("Income before: $"+binc+"\n"+"Income after taxes: $"+net.toFixed(2)+"\n"+"The money you spend on clothes and other accessories: $"+clothes.toFixed(2)+"\n"+"The money you spend on school supplies: $"+sup.toFixed(2)+"\n"+"The money you spend to buy savings bonds: $"+save.toFixed(2)+"\n"+"The money your parents spend to buy additional savings bonds for you: $"+parent.toFixed(2))
+        }
+
+        //Question 8- Print 5 numbers
+        function print(){
+            num = parseInt(prompt("Enter a 4 digit number:"));
+            d1= parseInt(num/1000);
+            num= num%1000;
+            d2= parseInt(num/100);
+            num= num%100;
+            d3= parseInt(num/10);
+            d4= num%10;
+            alert(d1+"\n"+d2+"\n"+d3+"\n"+d4);
+        }
+    </script>
+</head>
+<body>
+<!--Question 1-->
+    <input type="button" value="Question 1" onclick="show()"/>
+
+<!--Question 2-->
+    <button type="button" onclick="total()">Question 2</button>
+
+<!--Questin 3-->
+    <input type="button" value="Question 3" onclick="time()"/>
+
+<!--Question 4-->
+    <button  type="button" onclick="seconds()">Question 4</button>
+
+<!--Question 5-->
+    <button type="button" onclick="price()">Question 5</button>
+
+<!--Question 6-->
+    <input type="button" value="Question 6" onclick="liters()"/>
+
+<!--Question 7-->
+    <button type="button" onclick="job()">Question 7</button>
+
+<!--Question 8-->
+    <button type="button" onclick="print()">Question 8</button>
+
+</body>
+</html>

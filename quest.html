@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <script>
+        //Question 1
+        function area(){
+            len=parseFloat(prompt("Enter the length (in meters)"));
+            wid=parseFloat(prompt("Enter the width (in meters)"));
+            ar= (len*wid);
+            alert("The length is "+len+" meters"+"\n"+"The breadth is "+wid+" meters"+"\n"+"The area is: "+ar+" meter sq.")
+        }
+
+        //Question 2
+        function acres(){
+            leng=parseFloat(prompt("Enter the length (in feet)"));
+            widt=parseFloat(prompt("Enter the width (in feet)"));
+            area= parseFloat((leng*widt)/43560);
+            alert("The area of the field is "+area.toFixed(2)+" acres.")
+        }
+
+        //Question 5
+        function sum(){
+            num=parseInt(prompt("Enter a number"));
+            sum= (num*(num+1))/2
+            alert("The sum of all of the integers from 1 to "+num+ " is: "+sum)
+        }
+
+        //Question 6
+        function product(){
+            widg= parseInt(prompt("Enter the number of widgets ordered"));
+            giz= parseInt(prompt("Enter the number of gizmos ordered"));
+            tw= (widg*75)+(giz*112);
+            alert("The total weight is: "+"\n"+tw+" grams")
+        }
+
+    </script>
+</head>
+<body>
+<!--Question 1--> 
+    <button type="button" onclick="area()">Question 1</button>
+<!--Question 2--> 
+    <button type="button" onclick="acres()">Question 2</button>
+<!--Question 5-->
+    <button type="button" onclick="sum()">Question 5</button>
+<!--Question 5-->
+    <button type="button" onclick="product()">Questoin 6</button>
+</body>
+</html>

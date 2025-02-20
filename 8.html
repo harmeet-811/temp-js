@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print 5 numbers</title>
+    <script>
+        function print(){
+            num = parseInt(prompt("Enter a 4 digit number:"));
+            d1= parseInt(num/1000);
+            num= num%1000;
+            d2= parseInt(num/100);
+            num= num%100;
+            d3= parseInt(num/10);
+            d4= num%10;
+            alert(d1+"\n"+d2+"\n"+d3+"\n"+d4);
+        }
+    </script>
+</head> 
+<body>
+    <button type="button" onclick="print()">Click Me</button>
+</body>
+</html>

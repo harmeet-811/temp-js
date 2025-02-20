@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+    <script>
+        function liters(){
+            milk=parseFloat(prompt("Enter the total amount of milk produced"));
+            car= Math.round(milk/3.78);
+            pcost= Math.round(milk*0.38);
+            profit= Math.round(car*0.27);
+            alert("The number of milk cartons needed: "+car+"\n"+"The cost of producing milk: "+"$"+pcost+"\n"+"The profit of producing milk: "+"$"+profit)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Click Me" onclick="liters()"/>
+</body>
+</html>

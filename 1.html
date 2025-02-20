@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 decimal numbers</title>
+    <script>
+        function show(){
+            n1= parseFloat(prompt("Enter 1st decimal number:"));
+            n2= parseFloat(prompt("Enter 2nd decimal number:"));
+            n3= parseFloat(prompt("Enter 3rd decimal number:"));
+            n4= parseFloat(prompt("Enter 4th decimal number:"));
+            n5= parseFloat(prompt("Enter 5th decimal number:"));
+            alert("5 decimal numbers are:"+"\n"+n1+"\n"+n2+"\n"+n3+"\n"+n4+"\n"+n5);
+            sum= (n1+n2+n3+n4+n5);
+            avg= sum/5 ;
+            alert("Sum of 5 decimal numbers: \n"+ sum + "\n" + "Average :\n" + avg);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Question 1" onclick="show()"/>
+</body>
+</html>
